@@ -1,23 +1,32 @@
 # Job List Scraper
 
-This project scrapes job listings from a job site and extracts details such as job title, company, location, and description. The data is saved in a CSV file.
+A Python tool for scraping and extracting structured job listing
+data from UK job boards. Extracts job title, company, location,
+salary, and description into structured CSV format.
+
+> This project is being evolved into
+> [UK Job Market AI Radar](#) — a full pipeline with LLM-powered
+> skill extraction, trend analysis, and market intelligence.
+
+## Tech Stack
+- Python 3.8+
+- Selenium (browser automation)
+- BeautifulSoup4 (HTML parsing)
+- Pandas (data processing)
 
 ## Setup
 
-1. Clone the repository
-2. Install dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
-3. Run the scraper:
-   ```
-   python job_scraper.py
-   ```
+```bash
+git clone https://github.com/alinjfz/job-list-scraper.git
+cd job-list-scraper
+pip install -r requirements.txt
+python job_scraper.py
+```
 
-## Requirements
-
-- Python 3.8+
-- Selenium
-- BeautifulSoup4
-- Requests
-- Pandas
+## What's Next
+This scraper is the foundation for a larger project that adds:
+- Daily scheduled scraping via Apache Airflow
+- LLM-powered skill extraction and classification
+- PostgreSQL storage with trend analysis
+- Graduate Visa friendly job filtering
+- Market intelligence dashboard
